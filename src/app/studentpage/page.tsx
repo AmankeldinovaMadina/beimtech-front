@@ -27,10 +27,8 @@ export default function Home() {
                 <div className="flex flex-row gap-4 p-6">
                     <div className="flex flex-col w-1/5 gap-4">
                         <div className=""><UserProfile firstName={data.firstName} lastName={data.lastName} ranking={data.ranking}/></div>
-                        <div className="">Goals</div>
-                        <div className=""><SideBar/></div> 
                         <div className=""><ExamCount/></div>
-                        <div className="">Side bar</div>
+                        <div className=""><SideBar/></div> 
                     </div>
                     <div className="flex flex-col w-3/5 gap-4">
                         <div className=""><HomeworkList homeworkItems={homeworkItems}/></div>

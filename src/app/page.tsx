@@ -1,4 +1,8 @@
+
 import Image from "next/image";
+import Link from "next/link";
+
+
 
 export default function Home() {
   return (
@@ -17,7 +21,11 @@ export default function Home() {
             
           </div>
           <input type="password" placeholder="Password" className="textfield" style={{ width: '100%' }} />
-          <button className="button">Login now</button>   
+          <Link href="/studentpage" className="mx-4 hover:text-gray-300">
+          <button className="button" style={{ width: '100%' }}>Login now</button>
+          </Link>
+
+            
         </div>
       </div>
     </main>
