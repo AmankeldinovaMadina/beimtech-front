@@ -2,7 +2,7 @@ import React from 'react';
 
 const AttendanceTracker = () => {
   const rows = 3;
-  const cols = 12;
+  const cols = 20;
 
   const generateAttendanceData = () => {
     const attendanceData = [];
@@ -42,7 +42,7 @@ const AttendanceTracker = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+    <div className="flex flex-col bg-gray-100 p-4 rounded-lg shadow-md">
       <h2 className="text-lg font-semibold mb-4">Attendance in the past 3 months</h2>
       <div>
         {renderGrid()}
