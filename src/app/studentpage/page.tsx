@@ -3,6 +3,7 @@ import HomeworkList from "@/components/HomeworkList"
 import { LineChartUsageExample } from "@/components/LineChartUsageExample";
 import Calendar from "@/components/Calendar";
 import UserProfile from "@/components/UserProfile";
+import SideBar from '@/components/SideBar';
 
 const homeworkItems: string[] = [
     "Complete Algebra Exercise 3.1",
@@ -23,7 +24,7 @@ export default function Home() {
                     <div className="flex flex-col w-1/5 gap-4">
                         <div className=""><UserProfile firstName={data.firstName} lastName={data.lastName} ranking={data.ranking}/></div>
                         <div className="">Goals</div>
-                        <div className="">Side bar</div>
+                        <div className=""><SideBar/></div> 
                     </div>
                     <div className="flex flex-col w-3/5 gap-4">
                         <div className=""><HomeworkList homeworkItems={homeworkItems}/></div>
@@ -36,7 +37,6 @@ export default function Home() {
                         <div className="">
                             
                         </div>
-                        <div className="">Side bar</div>
                     </div>
                 </div>
         </div>
